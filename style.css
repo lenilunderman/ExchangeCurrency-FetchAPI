@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root{
+    --primary-color:    #253683;
+    --secondary-color:  #6299be;
+    --default-font: 'Work Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+img{
+    width: 180px;
+}
+
+h1{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+    margin: 50px 0px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .currency select {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    border-radius: 5px;
+
+  }
+
+  .currency input {
+    border: 0;
+    border-bottom: solid 2px rgba(109, 141, 138, 0.733);
+    border-radius: 5px;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .swap-rate-container {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    
+  }
+  
+  .btn{
+    text-align: left;
+    font-size: 22px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #f9f9f9;
+  }
+
+  .rate {
+    color: var(--primary-color);
+    padding: 0 10px;
+    font-size: 22px;
+  }
+  
+  select:focus,
+  input:focus,
+  button:focus {
+    outline: 0;
+  }
+
+  @media (max-width: 600px) {
+    .currency input {
+      width: 200px;
+    }
+    .swap-rate-container{
+        width: 300px;
+    }
+  }
+  
